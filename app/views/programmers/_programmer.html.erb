@@ -1,11 +1,10 @@
-<p>
-<strong>Home Country:</strong> <%= attributes.home_country %><br>
-</p>
 
-<p>
-<strong>Quote:</strong> <%= attributes.quote %><br>
-</p>
+<ul class="list-group">
+    <%= link_to programmer_path(programmer) do %>
+      <p class="list-group-item programmer-item">
+        <%= image_tag programmer.image, width: '70px' %>
+        <%= programmer.name %>
+      </p>
+    <% end %>
 
-<p>
-<strong>Claim To Fame:</strong> <%= attributes.claim_to_fame %>
-</p>
+</ul>
